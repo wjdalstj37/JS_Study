@@ -1,9 +1,20 @@
-const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
+const player = {
+  name: "minseo",
+  point: 10,
+  fat: true
+};
 
-// Get Item from Array
-console.log(daysOfWeek);
+/*
+console.log(player);
+console.log(player.name); // player["name"]
+*/
 
-// Add one more day to the Array
-daysOfWeek.push("sun");
+/*
+console.log(player);
+player.fat = false; // constant안의 무언가를 업데이트 할 때는 아무 문제 없음 (전체를 바꿀 때 문제 발생)
+console.log(player);
+*/
 
-console.log(daysOfWeek);
+console.log(player);
+player.lastName = "potato";
+console.log(player);
